@@ -59,14 +59,24 @@ export default function Form(props){
                             type='text'
                         />
                 </label>
+                
+                <label>
+                    Role
+                        <select>
+                            <option value='frontend'>Front-end</option>
+                            <option value='backend'>Back-end</option>
+                            <option value='full stack'>Full Stack</option>
+
+                        </select>
+                </label>
 
                 <label>
                     Terms Of Service
                         <input
-                            type='radio'
+                            type='checkbox'
                             name='TermsOfService'
                             value='TermsOfService'
-                            checked={values.TermsOfService === 'TermsOfService'}
+                            checked={values.TermsOfService}
                             onChange={onChange}
                         />
                 </label>

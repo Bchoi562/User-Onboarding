@@ -13,7 +13,9 @@ export default yup.object().shape({
     .string()
     .required('Password is required'),
   TermsOfService: yup
-    .string()
+    .boolean()
+    .required("Needs to be checked")
+    .oneOf([true],"Needs tos")
 //   // we are done with checkboxes
 //   hiking: yup.boolean(),
 //   reading: yup.boolean(),
