@@ -11,6 +11,7 @@ const initialFormValues = {
   name:'',
   email:'',
   Password:'',
+  Role:'',
   TermsOfService:false,
   
 
@@ -20,6 +21,7 @@ const initialFormErrors = {
   name:'',
   email:'',
   Password:'',
+  Role:'',
   TermsOfService:''
 }
 

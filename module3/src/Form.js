@@ -63,9 +63,9 @@ export default function Form(props){
                 <label>
                     Role
                         <select>
-                            <option value='frontend'>Front-end</option>
-                            <option value='backend'>Back-end</option>
-                            <option value='full stack'>Full Stack</option>
+                            <option value='1'>Front-end</option>
+                            <option value='2'>Back-end</option>
+                            <option value='3'>Full Stack</option>
 
                         </select>
                 </label>

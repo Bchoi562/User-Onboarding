@@ -12,6 +12,7 @@ describe("Users App", () =>{
     const emailInput = () => cy.get('input[name="email"]');
     const passInput = () => cy.get('input[name="Password"]');
     const checkedTerms = () => cy.get('input[name="TermsOfService"]');
+    const dropInput = () => cy.get('select');
     const submitButton = () => cy.get("button");
 
 
@@ -25,7 +26,7 @@ describe("Users App", () =>{
 
     });
 
-    it("can type in the inputs", () => {
+    it("can type in the inputs and select option", () => {
         // textInput()
         //     .should("have.value", "")
         //     .type("have fun learning React")
@@ -45,6 +46,12 @@ describe("Users App", () =>{
             .should("have.value","")
             .type("1234")
             .should("have.value", "1234");
+
+        dropInput()
+            .select('Front-end')
+            .should("have.value","1");
+            
+
     });
 
     it("User can check terms of service box", () => {
